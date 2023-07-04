@@ -12,7 +12,7 @@ const router = createRouter({
     {
       path: '/kategori',
       name: 'KategoriView',
-      component: () => import('../views/kategoriView.vue')
+      component: () => import('../views/KategoriView.vue')
     },
     {
       path: '/anggota',
