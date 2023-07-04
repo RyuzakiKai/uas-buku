@@ -30,7 +30,7 @@
 import axios from 'axios';
 import { ref } from 'vue';
 
-const urlInsert = 'https://mhdrmaulana.my.id/library/insert_kategori.php';
+const urlInsert = 'https://mhdrmaulana.my.id/perpustakaan/insert_kategori.php';
 
 export default {
   data() {

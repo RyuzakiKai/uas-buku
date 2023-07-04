@@ -41,7 +41,7 @@ import { RouterLink } from 'vue-router';
 import axios from 'axios';
 import { ref } from 'vue';
 
-const urlInsert = 'https://mhdrmaulana.my.id/library/select_peminjaman_master.php';
+const urlInsert = 'https://mhdrmaulana.my.id/perpustakaan/select_peminjaman_master.php';
 
 export default {
   data() {

@@ -59,7 +59,7 @@ export default {
   methods: {
     getAnggota(id) {
       axios
-          .get('https://mhdrmaulana.my.id/library/select_anggota_nomor.php?id='+id)
+          .get('https://mhdrmaulana.my.id/perpustakaan/select_anggota_nomor.php?id='+id)
           .then(response => {
             this.anggota = response.data.data[0];
           })
@@ -69,7 +69,7 @@ export default {
     },
     editAnggota(){
       axios
-          .post('https://mhdrmaulana.my.id/library/update_anggota.php',
+          .post('https://mhdrmaulana.my.id/perpustakaan/update_anggota.php',
               this.anggota, {
                 headers: {
                   'Content-Type': 'multipart/form-data'

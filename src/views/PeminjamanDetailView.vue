@@ -64,7 +64,7 @@ export default {
   methods: {
     getPeminjamanDetail(id) {
       axios
-          .get('https://mhdrmaulana.my.id/library/select_peminjaman_detail.php?id='+id)
+          .get('https://mhdrmaulana.my.id/perpustakaan/select_peminjaman_detail.php?id='+id)
           .then(response => {
             this.detail = response.data;
           })
@@ -74,7 +74,7 @@ export default {
     },
     getPeminjaman(id) {
       axios
-          .get('https://mhdrmaulana.my.id/library/select_peminjaman_master_id.php?id='+id)
+          .get('https://mhdrmaulana.my.id/perpustakaan/select_peminjaman_master_id.php?id='+id)
           .then(response => {
             this.peminjaman = response.data.data;
           })

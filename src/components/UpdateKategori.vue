@@ -38,7 +38,7 @@ export default {
   methods: {
     getKategori(id) {
       axios
-          .get('https://mhdrmaulana.my.id/library/select_kategori_kode.php?id='+id)
+          .get('https://mhdrmaulana.my.id/perpustakaan/select_kategori_kode.php?id='+id)
           .then(response => {
             this.category = response.data.data[0];
           })
@@ -48,7 +48,7 @@ export default {
     },
     editAnggota(){
       axios
-          .post('https://mhdrmaulana.my.id/library/update_kategori.php',
+          .post('https://mhdrmaulana.my.id/perpustakaan/update_kategori.php',
               this.category, {
                 headers: {
                   'Content-Type': 'multipart/form-data'

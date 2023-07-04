@@ -49,7 +49,7 @@ export default {
   methods: {
     getAnggotaList() {
       axios
-          .get('https://mhdrmaulana.my.id/library/select_anggota.php')
+          .get('https://mhdrmaulana.my.id/perpustakaan/select_anggota.php')
           .then(response => {
             this.anggota = response.data;
           })
@@ -59,7 +59,7 @@ export default {
     },
     hapusAnggota(id) {
       axios
-          .delete(`https://mhdrmaulana.my.id/library/delete_anggota.php?id=${id}`)
+          .delete(`https://mhdrmaulana.my.id/perpustakaan/delete_anggota.php?id=${id}`)
           .then(response => {
             console.log(response.data);
             this.getAnggotaList();

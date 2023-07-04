@@ -55,7 +55,7 @@ export default {
   methods: {
     getPeminjamanList() {
       axios
-          .get('https://mhdrmaulana.my.id/library/daftar_peminjaman_buku.php?status=' + this.status)
+          .get('https://mhdrmaulana.my.id/perpustakaan/daftar_peminjaman_buku.php?status=' + this.status)
           .then(response => {
             this.peminjaman = response.data;
           })

@@ -65,7 +65,7 @@ import {RouterLink} from 'vue-router';
 import axios from 'axios';
 import {ref} from 'vue';
 
-const urlUpdate = 'https://mhdrmaulana.my.id/library/update_buku.php?';
+const urlUpdate = 'https://mhdrmaulana.my.id/perpustakaan/update_buku.php?';
 
 export default {
   data() {
@@ -81,7 +81,7 @@ export default {
   methods: {
     getKategori(){
       axios
-          .get('https://mhdrmaulana.my.id/library/select_kategori.php?')
+          .get('https://mhdrmaulana.my.id/perpustakaan/select_kategori.php?')
           .then(response => {
             this.kategori = response.data;
           })
@@ -91,7 +91,7 @@ export default {
     },
     getBuku(id) {
       axios
-          .get('https://mhdrmaulana.my.id/library/select_buku_kode.php?id='+id)
+          .get('https://mhdrmaulana.my.id/perpustakaan/select_buku_kode.php?id='+id)
           .then(response => {
             this.buku = response.data.data[0];
           })

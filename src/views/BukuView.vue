@@ -54,7 +54,7 @@ export default {
   methods: {
     getBukuList() {
       axios
-          .get('https://mhdrmaulana.my.id/library/select_buku.php')
+          .get('https://mhdrmaulana.my.id/perpustakaan/select_buku.php')
           .then(response => {
             this.buku = response.data;
           })
@@ -64,7 +64,7 @@ export default {
     },
     hapusBuku(id) {
       axios
-          .delete(`https://mhdrmaulana.my.id/library/delete_buku.php?id=${id}`)
+          .delete(`https://mhdrmaulana.my.id/perpustakaan/delete_buku.php?id=${id}`)
           .then(response => {
             console.log(response.data);
             this.getBukuList();

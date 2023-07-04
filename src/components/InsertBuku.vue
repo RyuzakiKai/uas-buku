@@ -93,7 +93,7 @@ export default {
   methods: {
     getKategori(){
       axios
-          .get('https://mhdrmaulana.my.id/library/select_kategori.php')
+          .get('https://mhdrmaulana.my.id/perpustakaan/select_kategori.php')
           .then(response => {
             this.kategori = response.data;
           })
