@@ -71,7 +71,7 @@ import {RouterLink} from 'vue-router';
 import axios from 'axios';
 import {ref} from 'vue';
 
-const urlInsert = 'https://mhdrmaulana.my.id/library/insert_buku.php';
+const urlInsert = 'https://mhdrmaulana.my.id/perpustakaan/insert_buku.php';
 
 export default {
   data() {
@@ -122,7 +122,7 @@ export default {
           })
           .then((resp) => {
             console.log(resp.data);
-            this.$router.push('/buku');
+            this.$router.push('/');
             // Tambahkan pengarahan ke halaman dashboard atau halaman lain yang sesuai
           })
           .catch((err) => {
